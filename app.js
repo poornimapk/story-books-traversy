@@ -68,6 +68,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     store: store
+    // store: mongoose.connection.getClient(),
   }))
 
 
